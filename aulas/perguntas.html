@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exercícios</title>
+  </head>
+  <body>
+    <script>
+      const nome = prompt('Digite seu nome completo:')
+      document.body.innerHTML += `Seu nome é: ${nome}<br />`
+      document.body.innerHTML += `Seu nome tem ${nome.length} letras <br />` //tamanho do conteúdo
+      document.body.innerHTML += `A segunda letra do seu nome é: ${nome[1]}<br />` //índice no qual a letra se encontra
+      document.body.innerHTML += `Qual o primeiro índice da letra s no seu nome? ${nome.indexOf(
+        's'
+      )}<br />` //mostra em qual índice está a letra (S)
+      document.body.innerHTML += `Qual o último índice da letra LETRA s no seu nome?${nome.lastIndexOf(
+        's'
+      )}<br />` //mostra em qual índice está a última letra (S)
+      document.body.innerHTML += `As últimas 3 letras do seu nome são:  ${nome.slice(
+        '-3'
+      )}<br />` //O método slice() retorna uma cópia de parte de um array a partir de um subarray criado entre as posições início e fim (fim não é necessário) de um array original. O Array original não é modificado.
+      document.body.innerHTML += `As palavras do seu nome são: ${nome.split(
+        ' '
+      )}<br />` //separa o conteúdo com vírgulas
+      document.body.innerHTML += `Seu nome com letras maiúsculas: ${nome.toUpperCase()}<br />`
+      document.body.innerHTML += `Seu nome com letras minúsculas: ${nome.toLowerCase()}`
+    </script>
+  </body>
+</html>
